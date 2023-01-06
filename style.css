@@ -1,0 +1,292 @@
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #EFF1FA;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    box-sizing: border-box;
+}
+
+.logo-alura {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+/* Digite seu texto */
+.main-input
+ {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    position: absolute;
+    width: 680px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+
+
+
+
+    color: #0A3871;
+}
+
+.main-input
+ textarea {
+    background: #EFF1FA;
+    color: #0A3871;
+    border: none;
+    outline: none;
+    overflow: auto;
+    resize: none;
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+.main-input img{
+
+    display: block;
+    
+}
+
+
+
+
+.card {
+    position: relative;
+    display: block;
+    align-items: center;
+    width: 400px;
+    height: 930px;
+    left: 1000px;
+    top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+
+
+    /* white */
+
+    background: #FFFFFF;
+    /* shadow */
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.card textarea{
+   
+    color: #0A3871;
+    border: none;
+    outline: none;
+    overflow: auto;
+    resize: none;
+    margin-top: 30px;
+    font-size: 24px;
+    cursor: default;
+   
+}
+
+.imagem-vazio {
+    position: absolute;
+    width: 300px;
+    height: 304px;
+    left: 50px;
+    top: 283px;
+
+}
+
+.textos {
+    position: absolute;
+
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    top: 619px;
+
+    margin: 20px;
+
+}
+
+.textos h3 {
+
+    display: flex;
+
+    text-align: center;
+
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    color: #343A40;
+}
+
+.textos p {
+    width: 336px;
+    height: 48px;
+
+
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+
+
+    color: #495057;
+
+    margin: 10px;
+}
+
+#aviso {
+    color: #495057;
+
+    display: flex;
+    gap: 5px;
+    
+    width: 700px;
+    height: 18px;
+
+   
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+#aviso input{
+
+    margin-left: 283px;
+}
+
+.botoes {
+    position: absolute;
+    display: flex;
+    gap: 24px;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 870px;
+
+
+}
+
+#botao-1 {
+
+    text-align: center;
+    width: 328px;
+    height: 67px;
+    /* Dark blue/dark-blue-300 */
+    color: #FFFFFF;
+
+    border: 0px solid;
+    background: #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+
+}
+
+#botao-2 {
+    text-align: center;
+    width: 328px;
+    height: 67px;
+
+    background: #D8DFE8;
+   
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+
+
+
+}
+
+#botao-3 {
+
+    width: 336px;
+    height: 67px;
+    margin-top: 57px;
+    background: #FFFFFF;
+    /* Dark blue/dark-blue-300 */
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+
+}
+
+#botao-4{
+    width: 80px;
+    height: 24px;
+    background: #D8DFE8;
+
+    color:#0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.teste {
+
+    width: 100vh;
+    height: 40px;
+
+}
+
+footer {
+    clear: both;
+    position: static;
+    display: block;
+    background: #0A3871;
+    overflow: hidden;
+    margin-top: 35px;
+    bottom: 0;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+
+
+
+}
+
+footer p {
+    color: #FFFFFF;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.texto-footer {
+    color: #FFFFFF;
+
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+#icon-redes {
+
+    display: inline-block;
+    margin-bottom: 20px;
+
+}
+
+#icon-redes a {
+    padding: 15px;
+
+}
