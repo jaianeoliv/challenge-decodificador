@@ -28,56 +28,59 @@
     </header>
 
     <main>
+        <section class="container">
 
-        <section>
-            <div class="main-input">
-                <label for="texto-input">Digite seu texto</label>
-                
-                <textarea name="texto-input" id="texto-input" cols="45" rows="20" placeholder="" autofocus required
-                    wrap></textarea>
-            
-                <div id="aviso">
-                    <img src="info-icon.svg" alt="" width="24px" height="24px">
-                    <p>Apenas letras minúsculas e sem acento</p>
-                    <input type="button" value="Limpar" id="botao-4" onclick="clearContent()">
-                </div>
-            
-            </div>
-            
+            <section>
+                <div class="main-input">
 
-        </section>
+                    <label for="texto-input">Digite seu texto</label>
+                    <textarea name="texto-input" id="texto-input" cols="45" rows="20" autofocus required spellcheck="false" minlength="10" maxlength="9999999"
+                        wrap></textarea>
 
-        <section class="card">
-            <div >
+                    <div id="aviso">
+                        <img src="info-icon.svg" alt="" width="24px" height="24px">
+                        <p>Apenas letras minúsculas e sem acento</p>
+                        <input type="button" value="Limpar" id="botao-4" onclick="window.location.reload()">
+                    </div>
+                    <section class="botoes">
+
+                        <button id="botao-1" type="submit" value="Criptografar" >Criptografar
+                        </button>
+                        <button id="botao-2" type="submit" value="Descriptografar"
+                            onclick="descriptografar()">Descriptografar</button>
+                    </section>
 
 
-                <textarea name="resultado" id="resultado" cols="25" rows="25" wrap readonly></textarea>
-                <div>
-                    <button id="botao-3" type="submit" value="Copiar" onclick="copiar()">Copiar</button>
                 </div>
 
-                <div id="resultado-vazio">
 
-                    <img src="img-card.svg" alt="" class="imagem-vazio">
-                    <div class="textos">
-                        <h3>Nenhuma mensagem encontrada</h3>
-                        <p>Digite um texto que você deseja criptografar ou descriptografar. </p>
+            </section>
+
+            <section>
+                <div class="card">
+
+                    <textarea class="texto-resultado" name="resultado" id="resultado" cols="25" rows="25"
+                        wrap="soft" readonly></textarea>
+                    
+                    <button id="botao-3" type="submit" value="Copiar" >Copiar</button>
+
+                    <div id="resultado-vazio">
+
+                        <img src="img-card.svg" alt="" class="imagem-vazio">
+                        <div class="textos">
+                            <h3>Nenhuma mensagem encontrada</h3>
+                            <p>Digite um texto que você deseja criptografar ou descriptografar. </p>
+                        </div>
+                       
+
                     </div>
 
                 </div>
+            </section>
 
-
-            </div>
         </section>
 
-        <div class="aviso">
 
-        </div>
-        <section class="botoes">
-
-            <button id="botao-1" type="submit" value="Criptografar" onclick="criptografar()">Criptografar </button>
-            <button id="botao-2" type="submit" value="Descriptografar" onclick="descriptografar()">Descriptografar</button>
-        </section>
 
     </main>
 
@@ -101,7 +104,9 @@
         </div>
 
         <p class="copyright">&copy; 2022 Copyright Jaiane Oliveira</p>
-        <a href="https://www.oracle.com/br/education/oracle-next-education/" style="text-decoration: none;"><p>Alura|Oracle One </p></a>
+        <a href="https://www.oracle.com/br/education/oracle-next-education/" style="text-decoration: none;">
+            <p>Alura|Oracle One </p>
+        </a>
 
 
     </footer>
